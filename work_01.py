@@ -35,11 +35,7 @@ while True:
                     else:
                         print("もっと小さいですが、だいぶ近いです")
 
-# ５回全部外れたら最後に答えを表示する
-# if answer != input_line:
-#     print(f"正解は{answer}でした！")
-
-#もう一度チャレンジするかきく
+    #もう一度チャレンジするかきく
 
     if result:
         print(f"ゲームに勝ちました。あなたは{cnt}回目で正解しました。")
@@ -47,4 +43,9 @@ while True:
         print(f"ゲームに負けました。正解は{answer}でした。")
 
     ans = input("もう一度やりますか？（yes/no):")
-    if ans = 
+
+    if ans == "yes":
+         continue
+    else:
+         print("さようなら")
+         break
