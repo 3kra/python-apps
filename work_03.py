@@ -49,7 +49,7 @@ dc = {
     "大分県": "とり天",
     "宮崎県": "マンゴー",
     "鹿児島県": "黒豚",
-    "沖縄県": "ゴーヤー"
+    "沖縄県": "ゴーヤーチャンプルー",
 }
 
 
@@ -60,13 +60,13 @@ def choice(dc):
 
     question = product
     answer = prefecture
-    return question, answer #戻り値(return)
+    return question, answer  # 戻り値(return)
 
 
-total = 0 #問題数カウント
-correct = 0 #正解数カウント
+total = 0  # 問題数カウント
+correct = 0  # 正解数カウント
 
-#基本クイズは繰り返されるようにし、解答に exit と入力された場合にはゲームを終了
+# 基本クイズは繰り返されるようにし、解答に exit と入力された場合にはゲームを終了
 print("終了したいときは『exit』と入力してください。")
 
 while True:
@@ -85,5 +85,3 @@ while True:
         correct += 1
     else:
         print(f"残念！正解は {a} です。")
-
-     
